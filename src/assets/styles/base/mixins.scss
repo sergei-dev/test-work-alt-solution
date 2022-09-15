@@ -1,0 +1,23 @@
+@mixin placeholder {
+    ::-webkit-input-placeholder {
+        @content;
+    }
+
+    :-moz-placeholder {
+        @content;
+    }
+
+    ::-moz-placeholder {
+        @content;
+    }
+    
+    :-ms-input-placeholder {
+        @content;
+    }  
+}
+
+@mixin response($screen) {
+    @media all and (max-width: $screen + "px") {
+        @content;
+    }
+}
