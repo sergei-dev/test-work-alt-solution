@@ -140,6 +140,10 @@
 
       &:first-child {
         border-right: 1px solid $silver;
+
+        @include response(767) {
+          border-right: 0;
+        }
       }
 
       &--add {

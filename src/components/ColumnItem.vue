@@ -48,6 +48,11 @@
       opacity: 0;
       visibility: hidden;
       transition: opacity .3s, visibility .3s;
+
+      @include response(767) {
+        opacity: 1;
+        visibility: visible;
+      }
     }
 
     &__icon {
